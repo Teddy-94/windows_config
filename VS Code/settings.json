@@ -1,0 +1,45 @@
+{
+    "explorer.confirmDelete": false,
+    "editor.suggestSelection": "first",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on",
+    "editor.guides.bracketPairs": true,
+    "editor.acceptSuggestionOnEnter": "off",
+    "explorer.confirmDragAndDrop": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.multiCursorModifier": "ctrlCmd",
+    "workbench.tree.renderIndentGuides": "always",
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.detectIndentation": false,
+    "telemetry.telemetryLevel": "off",
+    "prettier.jsxSingleQuote": true,
+    "prettier.semi": false,
+    "editor.lineNumbers": "on",
+    "prettier.tabWidth": 4,
+    "terminal.integrated.autoReplies": {
+        "Terminate batch job (Y/N)": "Y"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.printWidth": 9999,
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "catppuccin.italicKeywords": false,
+    "catppuccin.italicComments": false,
+    "catppuccin.boldKeywords": false
+}
