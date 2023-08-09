@@ -1,0 +1,73 @@
+{
+  "files.eol": "\n",
+  "explorer.confirmDelete": false,
+  "editor.suggestSelection": "first",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "editor.minimap.enabled": false,
+  "editor.guides.bracketPairs": true,
+  "editor.acceptSuggestionOnEnter": "off",
+  "explorer.confirmDragAndDrop": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "editor.multiCursorModifier": "ctrlCmd",
+  "workbench.tree.renderIndentGuides": "always",
+  "editor.autoClosingBrackets": "never",
+  "editor.autoClosingQuotes": "never",
+  "editor.detectIndentation": false,
+  "telemetry.telemetryLevel": "off",
+  "editor.lineNumbers": "on",
+  "terminal.integrated.autoReplies": {
+    "Terminate batch job (Y/N)": "Y"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "catppuccin.italicKeywords": false,
+  "catppuccin.italicComments": false,
+  "catppuccin.boldKeywords": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.options": {
+
+    "cwd": "${workspaceFolder}"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.tabSize": 2,
+  "editor.suggest.selectionMode": "never",
+  "workbench.colorTheme": "onehalf-dark",
+  "catppuccin.workbenchMode": "flat",
+  "eslint.workingDirectories": [],
+  "workbench.editor.wrapTabs": true,
+  "workbench.editor.tabSizing": "fixed",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "explorer.autoReveal": false,
+  "terminal.integrated.enablePersistentSessions": false,
+  "explorer.compactFolders": false
+}
