@@ -1,4 +1,4 @@
-# Windows .Config
+# Windows Config
 
 These are the significant settings for my Windows setup.
 
