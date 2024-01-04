@@ -1,0 +1,20 @@
+[user]
+	email = teodor.adolfsson@gmail.com
+	name = Teodor Adolfsson
+[core]
+    editor = nvim
+	excludesFile = /Users/teodor.adolfsson/.gitignore
+    pager = delta
+[delta]
+    feature = line-numbers
+    line-numbers = true
+[diff]
+    tool = vimdiff
+[difftool]
+    prompt = false
+[alias]
+    st = status -sb
+    df = diff --color-words
+    dt = difftool
+[pull]
+    rebase = true

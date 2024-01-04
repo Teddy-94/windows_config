@@ -3,10 +3,14 @@
 These are the significant settings for my Windows setup.
 
 ## Dev setup
-I use the new Windows Terminal, and WSL2 for the absolute majority of programming. <br/>
-Most of the work happens in VSCode, but I really enjoy trying out new things, and have experimented both with NeoVim and Helix. <br/>
+I use the default Windows Terminal, running WSL2 for the absolute majority of programming. <br/>
+Most of the work happens in Neovim, but I also use VSCode/JetBrains for some things <br/>
 
+### Neovim
+* Maintained separately.
+* See the .config-nvim [repo](https://github.com/Teddy-94/.config-nvim)
 
+### VSCode
 The most important VSCode Extensions are:
 1. Live Share - For those good live pair programming sessions
 2. WSL - Make VSCode play nicer with a real OS
@@ -20,8 +24,10 @@ Language speciffic:
 2. ESLint and Prettier, always with project specified rulesets.
 3. LSP plugins, stuff like the language support for whatever language I am writing in.
 
+### WSL
+* The WSL distro I use is Ubuntu, in which i pull the relevant dotfiles for Neovim, git, zsh, etc.
+
 ## Misc.
 * One of the best life-hacks I have stumbeled upn is remapping the Caps-Lock key to something more useful. Many in the Vim/NeoVim community map it to Esc, but I have found it incredible to map CapsLock to Backspace.
-This is what the `capslock_to_backpace/capslock_to_backpace.reg` file does. I'm sure this can be somewhat easily achieved in Linux.
+This is what the `capslock_to_backpace/capslock_to_backpace.reg` file does. I'm sure this can be somewhat easily achieved in Linux. For Mac this can be achieved with Karabiner
 
-* The wsl_setup.sh contains some of the stuff I want installed in wsl. This is mainly the helix editor and its build dependencies, nodejs and pnpm via corepack, and the typescript lsp. This should be extended for each core dependency I install in wsl.
