@@ -28,7 +28,7 @@ precmd() {
         modified_files=$(git ls-files --modified | wc -l | tr -d '[:space:]')
         total_changed_files=$((untracked + tracked + modified_files))
 
-        staged=$(git ls-files --stage | wc -l | tr -d '[:space:]')
+        staged=$(git diff --cached --name-only | wc -l | tr -d '[:space:]')
         unpushed_commits=$(git log --branches --not --remotes --oneline | wc -l|tr -d '[:space:]')
         behind_count=$(git rev-list --right-only --count HEAD...@{u} 2>/dev/null | tr -d '[:space:]')
         ahead_count=$(git rev-list --left-only --count HEAD...@{u} 2>/dev/null | tr -d '[:space:]')
