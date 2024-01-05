@@ -29,10 +29,10 @@ precmd() {
         total_changed_files=$((untracked + tracked + modified_files))
 
         staged=$(git diff --cached --name-only | wc -l | tr -d '[:space:]')
-        unpushed_commits=$(git log --branches --not --remotes --oneline | wc -l|tr -d '[:space:]')
+
         behind_count=$(git rev-list --right-only --count HEAD...@{u} 2>/dev/null | tr -d '[:space:]')
         ahead_count=$(git rev-list --left-only --count HEAD...@{u} 2>/dev/null | tr -d '[:space:]')
-        PS1='%2/ %{%F{red}(${branch})%} %{%F{yellow}%}[U:${total_changed_files} S:${staged} P:${unpushed_commits} -:${behind_count} +:${ahead_count}]%{%f%} $ '
+        PS1='%2/ %{%F{red}(${branch})%} %{%F{yellow}%}[U:${total_changed_files} S:${staged} -:${behind_count} +:${ahead_count}]%{%f%} $ '
     else
         PS1='%2/ $ '
     fi
