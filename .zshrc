@@ -25,9 +25,9 @@ precmd() {
         untracked=$(git status --porcelain 2>/dev/null | grep '^??' | wc -l|tr -d '[:space:]')
         tracked=$(git status --porcelain | grep -v '^??' | grep -E '^[MADRC]' | wc -l|tr -d '[:space:]')
         unpushed_commits=$(git log --branches --not --remotes --oneline | wc -l|tr -d '[:space:]')
-        PS1='%2/ %{%F{red}(${branch})%} %{%F{yellow}%}[${untracked} ${tracked} ${unpushed_commits}]%{%f%} $'
+        PS1='%2/ %{%F{red}(${branch})%} %{%F{yellow}%}[${untracked} ${tracked} ${unpushed_commits}]%{%f%} $ '
     else
-        PS1='%2/ %{%F{red}()%f%}'
+        PS1='%2/ %{%F{red}()%f%} $ '
     fi
 }
 
