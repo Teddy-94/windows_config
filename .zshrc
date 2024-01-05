@@ -16,18 +16,25 @@ alias gst="git status -sb"
 alias gdf="git diff --color-words"
 alias gdt="git difftool"
 
+# Git info in prompt
 setopt prompt_subst
 precmd() {
     if [[  -n "$(git rev-parse --is-inside-work-tree 2>/dev/null)"  ]];
     then
-        # Git info in prompt
         branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
+
         untracked=$(git status --porcelain 2>/dev/null | grep '^??' | wc -l|tr -d '[:space:]')
         tracked=$(git status --porcelain | grep -v '^??' | grep -E '^[MADRC]' | wc -l|tr -d '[:space:]')
+        modified_files=$(git ls-files --modified | wc -l | tr -d '[:space:]')
+        total_changed_files=$((untracked + tracked + modified_files))
+
+        staged=$(git ls-files --stage | wc -l | tr -d '[:space:]')
         unpushed_commits=$(git log --branches --not --remotes --oneline | wc -l|tr -d '[:space:]')
-        PS1='%2/ %{%F{red}(${branch})%} %{%F{yellow}%}[${untracked} ${tracked} ${unpushed_commits}]%{%f%} $ '
+        behind_count=$(git rev-list --right-only --count HEAD...@{u} 2>/dev/null | tr -d '[:space:]')
+        ahead_count=$(git rev-list --left-only --count HEAD...@{u} 2>/dev/null | tr -d '[:space:]')
+        PS1='%2/ %{%F{red}(${branch})%} %{%F{yellow}%}[U:${total_changed_files} S:${staged} P:${unpushed_commits} -:${behind_count} +:${ahead_count}]%{%f%} $ '
     else
-        PS1='%2/ %{%F{red}()%f%} $ '
+        PS1='%2/ $ '
     fi
 }
 
