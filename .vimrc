@@ -12,6 +12,7 @@ set smartindent
 set expandtab
 set noswapfile
 set nobackup
+set incsearch
 
 syntax on
 vnoremap y ygv<esc>
