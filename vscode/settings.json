@@ -88,6 +88,46 @@
         "<leader>", "w", "l"
       ],
       "commands": [ "workbench.action.focusRightGroup" ],
+    },
+    {
+      "before": [
+        "<leader>", "g", "d"
+      ],
+      "after": [
+        "g", "d"
+      ]
+    },
+    {
+      "before": [
+        "<leader>", "g", "r"
+      ],
+      "commands": [ "editor.action.revealDefinition" ],
+    },
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "y"
+      ],
+      "after": [
+        "y", "g", "v", "<esc>"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "after": [
+        "<", "g", "v"
+      ]
+    },
+    {
+      "before": [
+        ">"
+      ],
+      "after": [
+        ">", "g", "v"
+      ]
     }
   ],
   "vim.surround": true
