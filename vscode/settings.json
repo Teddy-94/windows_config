@@ -107,6 +107,22 @@
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": [
+        "H"
+      ],
+      "after": [
+        "^"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "$"
+      ]
+    },
+    {
+      "before": [
         "y"
       ],
       "after": [
