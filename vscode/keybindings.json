@@ -1,4 +1,3 @@
-// Place your key bindings in this file to override the defaultsauto[]
 [
   {
     "key": "ctrl+c",
@@ -74,5 +73,15 @@
     "key": "cmd+d",
     "command": "cursorPageDown",
     "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+    {
+    "key": "tab",
+    "command": "editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus || cursorAtInlineEdit && inlineEditIsVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus || inlineEditIsVisible && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocusd || cursorAtInlineEdit && inlineEditIsVisible && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus"
+  },
+  {
+    "key": "tab",
+    "command": "-editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus || cursorAtInlineEdit && inlineEditIsVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus || inlineEditIsVisible && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus || cursorAtInlineEdit && inlineEditIsVisible && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
   }
 ]
