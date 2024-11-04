@@ -44,5 +44,35 @@
     "key": "shift+k",
     "command": "editor.action.moveLinesUpAction",
     "when": "editorTextFocus && vim.active && vim.mode == 'VisualLine'" 
+  },
+  {
+    "key": "ctrl+o",
+    "command": "workbench.action.navigateBack",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "workbench.action.navigateForward",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    "key": "cmd+o",
+    "command": "workbench.action.navigateBack",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    "key": "cmd+i",
+    "command": "workbench.action.navigateForward",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    "key": "cmd+u",
+    "command": "cursorPageUp",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    "key": "cmd+d",
+    "command": "cursorPageDown",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
   }
 ]
