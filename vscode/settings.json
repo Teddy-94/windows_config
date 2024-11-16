@@ -146,5 +146,6 @@
       ]
     }
   ],
-  "vim.surround": true
+  "vim.surround": true,
+  "diffEditor.ignoreTrimWhitespace": false
 }

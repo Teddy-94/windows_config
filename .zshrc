@@ -11,10 +11,18 @@ export NVM_DIR="$HOME/.nvm"
 
 # alias
 alias dc="docker-compose"
-alias lsa="ls -goa"
+
+alias lsa="ls -goaG"
+
+alias gco="git checkout"
 alias gst="git status -sb"
 alias gdf="git diff --color-words"
 alias gdt="git difftool"
+alias gl="git log -10 --pretty=oneline"
+
+alias ecs="rdeyqa ecs --fix"
+alias stan="rdeyqa phpstan"
+alias phpunit="rdeyqa phpunit"
 
 # Git info in prompt
 setopt prompt_subst
