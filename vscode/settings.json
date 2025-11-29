@@ -38,7 +38,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "eslint.options": {
-    "cwd": "${workspaceFolder}"
+    "cwd": "${workspaceFolder}",
+    // "overrideConfigFile": "eslint.config.js"
   },
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
@@ -147,5 +148,14 @@
     }
   ],
   "vim.surround": true,
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.blame.editorDecoration.enabled": false,
+  "git.blame.statusBarItem.enabled": true,
+   "vim.handleKeys": {
+    "<C-w>": false,
+    "<C-p>": false,
+    "<C-d>": true,
+    "<C-s>": false,
+    "<C-z>": false
+  }
 }
