@@ -157,5 +157,12 @@
     "<C-d>": true,
     "<C-s>": false,
     "<C-z>": false
-  }
+  },
+  "html.autoClosingTags": false,
+  "javascript.autoClosingTags": false,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+  "typescript.autoClosingTags": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false
 }
